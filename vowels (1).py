@@ -8,11 +8,14 @@ Original file is located at
 """
 
 from typing_extensions import Counter
+vocales_encontradas=[]
 vocales="aeiou"
 contador=0
 texto= input("introduce un texto:")
 for i in texto.lower():
  if i in vocales:
   contador+=1
+  vocales_encontradas.append(i)
 
 print (f"el numero de vocales es: {contador}")
+print (f"Las vocales encontradas son: {vocales_encontradas}")
